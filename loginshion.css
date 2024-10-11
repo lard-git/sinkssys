@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     align-items: center;
@@ -8,11 +10,17 @@ body {
     background: #f3f3f3;
     flex-direction: column;
     margin: 0; 
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,113,255,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: url(Images/SinkyssysBG.png);
+    background-size: cover;
+    
+}
+
+span {
+    color: #4b77ee;
 }
 
 .main {
+    padding-top: 10px;
     background-color: #4b4a4a;
     border-radius: 15px;
     box-shadow: 0 0 20px #2f81fc33;
@@ -24,10 +32,21 @@ body {
 }
 
 h1 {
-    color: #7091eb;
+    color: #ecf1ff;
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+h1 {
+    margin-bottom: -20px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    font-size: 15px;
 }
 
 label {
@@ -61,13 +80,28 @@ button {
     border: none;
     color: white;
     cursor: pointer;
-    background-color: #7091eb;
+    background-color: #4b77ee;
     width: 100%;
     font-size: 16px;
+}
+
+
+.wrap :hover {
+    transition: all 0.5s ease 0s;
+    background-color: #324c94;
 }
 
 .wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+input, text {
+    color: white;
+}
+
+.aste, .aster {
+    padding-left: 5px;
+    color: tomato;
 }
