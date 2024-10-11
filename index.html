@@ -2,7 +2,7 @@
 <html>
 
 <head>
-      <title>HTML Login Form</title>
+      <title>Login Form</title>
       <link rel="stylesheet" href="indexstyle.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,35 +13,43 @@
       <div class="main">
             <h1>SINKS <span>R</span> US</h1>
             <h3>Enter your login credentials</h3>
-            <form action="">
-                  <label for="first">
-                        Username or Email address<span class="aste">*</span>
+            <form id="loginForm" action="EmployeeList.html" method="GET" onsubmit="return validateForm()">
+                  <label for="username">
+                        Username or Email address<span class="aster">*</span>
                   </label>
                   <input type="text" 
-                         id="first" 
-                         name="first" 
-                         placeholder="" required>     
-
+                         id="username" 
+                         name="username" 
+                         placeholder="Enter your username or email" required>     
+            
                   <label for="password">
                         Password<span class="aster">*</span>
                   </label>
                   <input type="password"
                          id="password" 
                          name="password"
-                         placeholder="" required>
-
-
-                  <!--W idol-->
+                         placeholder="Enter your password" required>
+            
                   <div class="wrap">
-                        <button type="submit" onclick="location.href=getLink()">
+                        <button type="submit">
                               Submit
                         </button>
                   </div>
-                  <script>
-                        function getLink() { 
-                            return 'EmployeeList.html';
+            </form>
+            
+            <script>
+                  function validateForm() {
+                        var username = document.getElementById('username').value;
+                        var password = document.getElementById('password').value;
+                        
+                        // Check if fields are empty
+                        if (username === '' || password === '') {
+                              alert('Please fill in all fields.');
+                              return false;
                         }
-                  </script>
+                        return true;
+                  }
+            </script>
             </form>
       </div>
 </body>
