@@ -31,13 +31,17 @@
                          placeholder="" required>
 
 
-                  <!--If click dapat pupunta sa Employe List-->
+                  <!--W idol-->
                   <div class="wrap">
-                        <button type="submit"
-                                onclick="solve()">
+                        <button type="submit" onclick="location.href=getLink()">
                               Submit
                         </button>
                   </div>
+                  <script>
+                        function getLink() { 
+                            return 'EmployeeList.html';
+                        }
+                  </script>
             </form>
       </div>
 </body>
