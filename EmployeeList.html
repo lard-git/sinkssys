@@ -5,62 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #IVAN:target {
+            display: flex;
+        }
+        #PEDRO:target {
+            display: flex;
+        }
+        #ANA:target {
+            display: flex;
+        }
+        #JOHN:target {
+            display: flex;
+        }
+        #EMMA:target {
+            display: flex;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 p-0 m-0">
     <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
         <h1 class="text-2xl font-bold mb-6">Employee</h1>
         <p class="mb-6 font-size: 0.75rem;" >This are the list of Employees</p>
+            
+          <div class=" max-w-4xl mx-auto p-8 table-auto g-sky-500/100 ...">
+              <table class="w-full text-sm text-left rtl:text-right text-black-400 dark:text-black-400">
+                  <thead>
+                    <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-2 dark:border-gray-700">
+                      <th class="px-4 py-2 ">Name</th>
+                      <th class="px-4 py-2">Job Title</th>
+                      <th class="px-4 py-2">Department</th>
+                      <th class="px-4 py-2">Email</th>
+                      <th class="px-4 py-2">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="px-4 py-2">Ivan Petrov</td>
+                      <td class="px-4 py-2">Software Engineer</td>
+                      <td class="px-4 py-2">IT</td>
+                      <td class="px-4 py-2">ivan.petrov@sinksrus.com</td>
+                      <td class="px-4 py-2">
+                        <a href="#IVAN" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">INFO</a>
+                        <div id="IVAN" class="bg-white rounded-lg w-96 p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden ">
+                          <a href="#" class="absolute top-3 right-0 text-gray-500 text-2xl hover:text-gray-700 ">×</a>
+                          <h2 class="text-2xl font-semibold mb-4">Employee Details</h2>
+                          <ul class="text-base">
+                            <li>Contact Number: 555-6789</li>
+                            <li>Address: 12 Red Square, Moscow</li>
+                            <li>Sex: Male</li>
+                            <li>Marital Status: Single</li>
+                          </ul>
+                          
+                        </div>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-4 py-2">Pedro Los Baños</td>
+                      <td class="px-4 py-2">Marketing Manager</td>
+                      <td class="px-4 py-2">Marketing</td>
+                      <td class="px-4 py-2">pedro_los_banos@sinksrus.com</td>
+                      <td class="px-4 py-2">
+                        <a href="#PEDRO" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">INFO</a>
+                        <div id="PEDRO" class="bg-white rounded-lg w-96 p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden ">
+                          <a href="#" class="absolute top-3 right-0 text-gray-500 text-2xl hover:text-gray-700 ">×</a>
+                          <h2 class="text-2xl font-semibold mb-4">Employee Details</h2>
+                          <ul class="text-base">
+                            <li>Contact Number: 555-6789</li>
+                            <li>Address: 12 Red Square, Moscow</li>
+                            <li>Sex: Male</li>
+                            <li>Marital Status: Single</li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">Ana Gómez</td>
+                      <td class="px-4 py-2">HR Specialist</td>
+                      <td class="px-4 py-2">HR</td>
+                      <td class="px-4 py-2">ana.gomez@sinksrus.com</td>
+                      <td class="px-4 py-2">
+                        <a href="#ANA" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">INFO</a>
+                        <div id="ANA" class="bg-white rounded-lg w-96 p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden ">
+                          <a href="#" class="absolute top-3 right-0 text-gray-500 text-2xl hover:text-gray-700 ">×</a>
+                          <h2 class="text-2xl font-semibold mb-4">Employee Details</h2>
+                          <ul class="text-base">
+                            <li>Contact Number: 555-6789</li>
+                            <li>Address: 12 Red Square, Moscow</li>
+                            <li>Sex: Male</li>
+                            <li>Marital Status: Single</li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">John Wu</td>
+                      <td class="px-4 py-2">Sales Associate</td>
+                      <td class="px-4 py-2">Sales</td>
+                      <td class="px-4 py-2">john.wu@sinksrus.com</td>
+                      <td class="px-4 py-2">
+                        <a href="#JOHN" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">INFO</a>
+                        <div id="JOHN" class="bg-white rounded-lg w-96 p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden ">
+                          <a href="#" class="absolute top-3 right-0 text-gray-500 text-2xl hover:text-gray-700 ">×</a>
+                          <h2 class="text-2xl font-semibold mb-4">Employee Details</h2>
+                          <ul class="text-base">
+                            <li>Contact Number: 555-6789</li>
+                            <li>Address: 12 Red Square, Moscow</li>
+                            <li>Sex: Male</li>
+                            <li>Marital Status: Single</li>
+                          </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">Emma Wilson</td>
+                      <td class="px-4 py-2">CEO</td>
+                      <td class="px-4 py-2">Admin</td>
+                      <td class="px-4 py-2">emma@sinksrus.com</td>
+                      <td class="px-4 py-2">
+                        <a href="#EMMA" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">INFO</a>
+                        <div id="EMMA" class="bg-white rounded-lg w-96 p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden ">
+                          <a href="#" class="absolute top-3 right-0 text-gray-500 text-2xl hover:text-gray-700 ">×</a>
+                          <h2 class="text-2xl font-semibold mb-4">Employee Details</h2>
+                          <ul class="text-base">
+                            <li>Contact Number: 555-6789</li>
+                            <li>Address: 12 Red Square, Moscow</li>
+                            <li>Sex: Male</li>
+                            <li>Marital Status: Single</li>
+                          </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
     </div>
 
-        <div class=" max-w-4xl mx-auto p-8 table-auto g-sky-500/100 ...">
-        <table class="table-auto">
-            <thead>
-              <tr>
-                <th class="px-4 py-2">Name</th>
-                <th class="px-4 py-2">Job Title</th>
-                <th class="px-4 py-2">Department</th>
-                <th class="px-4 py-2">Email</th>
-                <th class="px-4 py-2">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-4 py-2">Ivan Petrov</td>
-                <td class="px-4 py-2">SoftwareEngineer</td>
-                <td class="px-4 py-2">IT</td>
-                <td class="px-4 py-2">ivan.petrov@sinksrus.com</td>
-                <td class="px-4 py-2" >Information</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Pedro Los Baños</td>
-                <td class="px-4 py-2">Marketing Manager</td>
-                <td class="px-4 py-2">Marketing</td>
-                <td class="px-4 py-2">pedro_los_banos@sinksrus.com</td>
-                <td class="px-4 py-2">Information</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Ana Gómez</td>
-                <td class="px-4 py-2">HR Specialist</td>
-                <td class="px-4 py-2">HR</td>
-                <td class="px-4 py-2">ana.gomez@sinksrus.com</td>
-                <td class="px-4 py-2">Information</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">John Wu</td>
-                <td class="px-4 py-2">Sales Associate</td>
-                <td class="px-4 py-2">Sales</td>
-                <td class="px-4 py-2">john.wu@sinksrus.com</td>
-                <td class="px-4 py-2">Information</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Emma Wilson</td>
-                <td class="px-4 py-2">CEO</td>
-                <td class="px-4 py-2">Admin</td>
-                <td class="px-4 py-2">emma@sinksrus.com</td>
-                <td class="px-4 py-2">Information</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        
 </body>
 </html>
